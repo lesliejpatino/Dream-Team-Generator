@@ -12,7 +12,7 @@ test("testing employees name", () => {
 
 // test("testing employees email", () => {
 //     const emailInstance = new Employee("leslie@gmail.com") 
-//     expect(emailInstance.getId()).toBe("leslie@gmail.com")
+//     expect(emailInstance.getEmail()).toBe("leslie@gmail.com")
 // })
 
 // test("testing role", () => {
