@@ -108,7 +108,7 @@ inquirer.prompt([
     {
         type: "input",
         message: "What school does the intern currently attend: ",
-        name: "office"
+        name: "school"
     },
     // add an option to add another team member
 ])
