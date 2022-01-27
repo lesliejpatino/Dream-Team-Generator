@@ -38,7 +38,8 @@ const Intern = require('./lib/Intern');
 const teamArray = [];
 
 // manager prompts
-inquirer.prompt([
+const managerInfo = () => { }
+return inquirer.prompt([
     {
         type: "input",
         message: "Who is the team manager?",
@@ -59,6 +60,34 @@ inquirer.prompt([
         message: "What is the manager's office number?",
         name: "office"
     },
+    // add an option to add another team member
 ])
+
+// engineer prompts
+return inquirer.prompt([
+    {
+        type: "input",
+        message: "What is the Engineer's name?",
+        name: "name"
+    },
+    {
+        type: "input",
+        message: "Please enter the engineer's ID: ",
+        name: "id"
+    },
+    {
+        type: "input",
+        message: "Please enter the engineer's email: ",
+        name: "email"
+    },
+    {
+        type: "input",
+        message: "Please enter the engineer's github username: ",
+        name: "office"
+    },
+    // add an option to add another team member
+])
+
+
 
 
