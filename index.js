@@ -26,5 +26,5 @@
 // THEN I exit the application, and the HTML is generated
 
 const inquirer = require("inquirer");
-const jest = require("jest");
+
 
