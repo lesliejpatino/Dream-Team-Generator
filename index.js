@@ -25,6 +25,18 @@
 // WHEN I decide to finish building my team
 // THEN I exit the application, and the HTML is generated
 
+// node modules
+const fs = require('fs');
 const inquirer = require("inquirer");
+
+// team member profiles
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
+
+// team array
+const teamArray = [];
+
+
 
 
