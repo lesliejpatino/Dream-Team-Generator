@@ -11,7 +11,7 @@
 
 
 ## Description 
-* The Team Profile Generator is a command-line-input application. Details about the [installation](#installation) required is listed below. 
+* The Team Profile Generator is a command-line application. Details about the [installation](#installation) required is listed below. 
 When the application is [run](#usage) the user selects a member from the engineering team from a list and is then asked various questions that pertain to that employee. The questions will differ slightly depending on the type of employee that is selected.
 At the end of each prompt, the user will be given the option to add information on another team member if needed. Once the process is complete, an HTML file will be created to display each team members information on cards.
 

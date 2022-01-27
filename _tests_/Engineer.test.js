@@ -1,6 +1,7 @@
 const Engineer = require("../lib/Engineer");
 
 test("testing engineers github", () => {
-    const githubInstance = new Engineer("octocat") 
-    expect(githubInstance.getGithub()).toBe("octocat")
+    const testGithub = "octocat"
+    const githubInstance = new Engineer("", "octocat", "", testGithub) 
+    expect(githubInstance.github).toBe(testGithub)
 })
