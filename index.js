@@ -37,28 +37,37 @@ const Intern = require('./lib/Intern');
 // team array
 const teamArray = [];
 
+inquirer.prompt([
+    {
+    type: "list",
+    message: "Select the type of employee you will be adding to your list: ",
+    name: "addEmployeePrompt",
+    choices: ["Manager", "Engineer", "Intern", "No more to add"]
+    }
+]);
+
 // manager prompts
 const managerInfo = () => { }
 return inquirer.prompt([
     {
         type: "input",
         message: "Who is the team manager?",
-        name: "name"
+        name: "mgrName"
     },
     {
         type: "input",
-        message: "Please enter the manager's ID: ",
-        name: "id"
+        message: "Please enter the manager's ID number: ",
+        name: "mgrId"
     },
     {
         type: "input",
         message: "Please enter the manager's email: ",
-        name: "email"
+        name: "mgrEmail"
     },
     {
         type: "input",
         message: "What is the manager's office number?",
-        name: "office"
+        name: "mgrOffice"
     },
     // add an option to add another team member
 ])
@@ -68,22 +77,22 @@ inquirer.prompt([
     {
         type: "input",
         message: "What is the Engineer's name?",
-        name: "name"
+        name: "engName"
     },
     {
         type: "input",
-        message: "Please enter the engineer's ID: ",
-        name: "id"
+        message: "Please enter the engineer's ID number: ",
+        name: "engId"
     },
     {
         type: "input",
         message: "Please enter the engineer's email: ",
-        name: "email"
+        name: "engEmail"
     },
     {
         type: "input",
         message: "Please enter the engineer's github username: ",
-        name: "office"
+        name: "engGithub"
     },
     // add an option to add another team member
 ])
@@ -93,22 +102,22 @@ inquirer.prompt([
     {
         type: "input",
         message: "What is the intern's name?",
-        name: "name"
+        name: "internName"
     },
     {
         type: "input",
-        message: "Please enter the intern's ID: ",
-        name: "id"
+        message: "Please enter the intern's ID number: ",
+        name: "internId"
     },
     {
         type: "input",
         message: "Please enter the intern's email: ",
-        name: "email"
+        name: "internEmail"
     },
     {
         type: "input",
         message: "What school does the intern currently attend: ",
-        name: "school"
+        name: "internSchool"
     },
     // add an option to add another team member
 ])
