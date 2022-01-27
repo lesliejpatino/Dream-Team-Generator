@@ -64,7 +64,7 @@ return inquirer.prompt([
 ])
 
 // engineer prompts
-return inquirer.prompt([
+inquirer.prompt([
     {
         type: "input",
         message: "What is the Engineer's name?",
@@ -88,6 +88,29 @@ return inquirer.prompt([
     // add an option to add another team member
 ])
 
-
+// intern prompts
+inquirer.prompt([
+    {
+        type: "input",
+        message: "What is the intern's name?",
+        name: "name"
+    },
+    {
+        type: "input",
+        message: "Please enter the intern's ID: ",
+        name: "id"
+    },
+    {
+        type: "input",
+        message: "Please enter the intern's email: ",
+        name: "email"
+    },
+    {
+        type: "input",
+        message: "What school does the intern currently attend: ",
+        name: "office"
+    },
+    // add an option to add another team member
+])
 
 
