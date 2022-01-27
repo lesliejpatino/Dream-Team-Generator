@@ -5,17 +5,14 @@ test("testing employees name", () => {
     expect(nameInstance.getName()).toBe("Taylor")
 })
 
-// test("testing employees ID", () => {
-//     const idInstance = new Employee("1") 
-//     expect(idInstance.getId()).toBe("1")
-// })
+test("testing employees ID", () => {
+    const testID = 2211;
+    const idInstance = new Employee("", testID, "") 
+    expect(idInstance.id).toBe(testID)
+})
 
-// test("testing employees email", () => {
-//     const emailInstance = new Employee("leslie@gmail.com") 
-//     expect(emailInstance.getEmail()).toBe("leslie@gmail.com")
-// })
-
-// test("testing role", () => {
-
-// }
-
+test("testing employees email", () => {
+    const testEmail = "leslie@gmail.com";
+    const emailInstance = new Employee("", "", testEmail) 
+    expect(emailInstance.email).toBe(testEmail)
+})

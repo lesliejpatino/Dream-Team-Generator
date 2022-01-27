@@ -25,6 +25,8 @@
 // WHEN I decide to finish building my team
 // THEN I exit the application, and the HTML is generated
 
+
+
 // node modules
 const fs = require('fs');
 const inquirer = require("inquirer");
@@ -40,15 +42,15 @@ const teamArray = [];
 inquirer.prompt([
     {
     type: "list",
-    message: "Select the type of employee you will be adding to your list: ",
+    message: "Which type of employee you will be adding to your list: ",
     name: "addEmployeePrompt",
     choices: ["Manager", "Engineer", "Intern", "No more to add"]
     }
 ]);
 
 // manager prompts
-const managerInfo = () => { }
-return inquirer.prompt([
+
+inquirer.prompt([
     {
         type: "input",
         message: "Who is the team manager?",
