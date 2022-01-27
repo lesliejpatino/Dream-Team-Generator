@@ -2,26 +2,49 @@
 
 
 ## Table of Contents
-
+* [Description](#description)
+* [Link](#link)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Author](#author)
+* [License](#license)
 
 
 ## Description 
-
+* 
 
 
 ## Link
-
+* Link to the [Team Profile Generator Repo]()
 
 
 ## Installation 
+The following dependencies will be needed in order for this application to work:
+* [Node.js](https://nodejs.org/en/)
+* [Node module - Inquirer](https://www.npmjs.com/package/inquirer)
+* [Node module - FS(file system) ](https://nodejs.org/api/fs.html)
+* [Testing Framework - Jest](https://jestjs.io/)
+
+
+
+
+
 
 
 
 ## Usage
+Once the dependencies mentioned under [Installation](#installation) are installed, the application can be run directly from the command line by typing:
+```
+node index.js
+```
 
+[Click here to view a video that will walk you through the applications functionality.]()
 
 
 ## Author
+## Leslie Patino
+* [Leslie's GitHub](https://github.com/lesliejpatino)
+* [Leslie's LinkedIn](https://www.linkedin.com/in/lesliejpatino/)
 
 
 ## License
