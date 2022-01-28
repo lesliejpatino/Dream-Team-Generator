@@ -1,20 +1,38 @@
 const Employee = require("../lib/Employee");
 
-test("testing employees name", () => {
-    const nameInstance = new Employee("Taylor") 
-    expect(nameInstance.getName()).toBe("Taylor")
-})
+// getName() - works
+// getId() - works 
+// getEmail() - works
+// getRole() - works
 
-test("testing employees ID", () => {
-    const testID = 2211;
-    const idInstance = new Employee("", testID, "") 
-    expect(idInstance.id).toBe(testID)
-})
+describe('Employee', () => {
+    it('getName returns the name of the current employee', () => {
 
-test("testing employees email", () => {
-    const testEmail = "leslie@gmail.com";
-    const emailInstance = new Employee("", "", testEmail) 
-    expect(emailInstance.email).toBe(testEmail)
-})
+        let employee = new Employee("Leslie", "21", "leslie@coder.com");
+        let employeeName = employee.getName();
 
-// test methods
+        expect(employeeName).toBe("Leslie");
+    }) 
+    it('getID returns the id of the current employee', () => {
+
+        let employee = new Employee("Leslie", "21", "leslie@coder.com");
+        let employeeName = employee.getId();
+
+        expect(employeeName).toBe("21");
+    }) 
+    it('getEmail returns the email of the current employee', () => {
+
+        let employee = new Employee("Leslie", "21", "leslie@coder.com");
+        let employeeName = employee.getEmail();
+
+        expect(employeeName).toBe("leslie@coder.com");
+    }) 
+    it('getEmail returns the role of the current employee', () => {
+
+        let employee = new Employee("Leslie", "21", "leslie@coder.com");
+        let employeeName = employee.getRole();
+
+        expect(employeeName).toBe("Employee");
+    }) 
+    
+});
