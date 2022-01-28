@@ -200,7 +200,7 @@ const buildHtml = () => {
 
 // this function will create the cards that will display the team member info
 const cardRender = (member) => {
-    console.log(member);
+
     let query = `
     <div class="col-3 m-3">
                 <div class="card text-center">
@@ -210,7 +210,13 @@ const cardRender = (member) => {
                     </div>
                     <div class="card-body">
                         <p> ID: ${member.id}</p>
-                        <p> Email: ${member.email}</p>
+                        <p> Email: <a href="mailto:">${member.email} </a></p>
+                        <p>
+                        
+                        ${member.officeNumber ? "<p>Office Number: " + member.officeNumber + "</p>" : 
+                            member.github ? "<p>GitHub: " + member.github + "</p>" : 
+                            member.school ? "<p>School: " + member.school + "</p>" : ""}
+                        </p>
                     </div>
                 </div>
 
@@ -218,13 +224,3 @@ const cardRender = (member) => {
 
     return query;
 }
-
-
-// WHEN I click on an email address in the HTML
-// THEN my default email program opens and populates the TO field of the email with the address
-
-// WHEN I click on the GitHub username
-// THEN that GitHub profile opens in a new tab
-
-
-

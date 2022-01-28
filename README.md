@@ -11,13 +11,15 @@
 
 
 ## Description 
-* The Team Profile Generator is a command-line application. Details about the [installation](#installation) required is listed below. 
+* The Team Profile Generator is a command-line application. Details about the [installation](#installation) required are listed below. 
 When the application is [run](#usage) the user selects a member from the engineering team from a list and is then asked various questions that pertain to that employee. The questions will differ slightly depending on the type of employee that is selected.
 At the end of each prompt, the user will be given the option to add information on another team member if needed. Once the process is complete, an HTML file will be created to display each team members information on cards.
 
 
 ## Link
 * Link to the [Team Profile Generator Repo](https://github.com/lesliejpatino/team-profile-generator)
+<br />
+![Rendered Site](images/html.png)
 
 
 ## Installation 
@@ -34,7 +36,7 @@ Once the dependencies mentioned under [Installation](#installation) are installe
 node index.js
 ```
 
-[Click here to view a video that will walk you through the applications functionality.]()
+[Click here to view a video that will walk you through the applications functionality.](https://drive.google.com/file/d/1yh6IVQQ5qVrm45pNfVsNfTwm-jXdCO1b/view)
 
 
 ## Author
