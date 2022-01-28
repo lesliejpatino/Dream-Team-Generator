@@ -5,3 +5,8 @@ test("testing school", () => {
     const schoolInstance = new Intern("","","", testSchool);
     expect(schoolInstance.school).toBe(testSchool);
 });
+
+describe("Intern", () =>{
+    
+})
+// test method

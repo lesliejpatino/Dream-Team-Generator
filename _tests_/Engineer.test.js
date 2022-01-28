@@ -5,3 +5,5 @@ test("testing engineers github", () => {
     const githubInstance = new Engineer("", "octocat", "", testGithub) 
     expect(githubInstance.github).toBe(testGithub)
 })
+
+// test methods

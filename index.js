@@ -39,17 +39,49 @@ const Intern = require('./lib/Intern');
 // team array
 const teamArray = [];
 
+// prompt that user will see after entering a team member
+const yesOrNo = () => {
+inquirer.prompt([
+    {
+        type: "list",
+        message: "Would you like to add another team member?",
+        name: "yesOrNo",
+        choices: ["Yes", "No"]
+    }
+]).then(answers =>{
+    if (answers.yesOrNo === "Yes") {
+        addMember()
+    } else {
+        buildHtml();
+    }   
+})
+}
+
+// prompt that user will see each time they go to enter a new team member
+const addMember = () => {
 inquirer.prompt([
     {
     type: "list",
     message: "Which type of employee you will be adding to your list: ",
-    name: "addEmployeePrompt",
+    name: "addTeamMember",
     choices: ["Manager", "Engineer", "Intern", "No more to add"]
     }
-]);
+]).then(answers => {
+    if(answers.addTeamMember === "Manager") {
+        managerPrompt();
+    }
+        else if (answers.addTeamMember === "Engineer") {
+            engineerPrompt();
+        } else if (answers.addTeamMember === "Intern") {
+            internPrompt();
+        } else {
+            buildHtml();
+        }
+})
+}
 
 // manager prompts
-
+const managerPrompt = () => {
 inquirer.prompt([
     {
         type: "input",
@@ -72,9 +104,15 @@ inquirer.prompt([
         name: "mgrOffice"
     },
     // add an option to add another team member
-])
+]).then(answers=>{
+    let manager = new Manager(answers.mgrName, answers.mgrId, answers.mgrEmail, answers.mgrOffice);
+    teamArray.push(manager);
+    yesOrNo();
+})
+}
 
 // engineer prompts
+const engineerPrompt = () => {
 inquirer.prompt([
     {
         type: "input",
@@ -98,8 +136,10 @@ inquirer.prompt([
     },
     // add an option to add another team member
 ])
+}
 
 // intern prompts
+const internPrompt = () => {
 inquirer.prompt([
     {
         type: "input",
@@ -122,6 +162,9 @@ inquirer.prompt([
         name: "internSchool"
     },
     // add an option to add another team member
-])
+]).then (answers => {
+
+});
+}
 
 

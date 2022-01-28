@@ -16,3 +16,5 @@ test("testing employees email", () => {
     const emailInstance = new Employee("", "", testEmail) 
     expect(emailInstance.email).toBe(testEmail)
 })
+
+// test methods
