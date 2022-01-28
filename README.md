@@ -19,8 +19,8 @@ At the end of each prompt, the user will be given the option to add information 
 ## Link
 * Link to the [Team Profile Generator Repo](https://github.com/lesliejpatino/team-profile-generator)
 <br />
-![Rendered Site](images/html.png)
 
+![html](https://user-images.githubusercontent.com/93683598/151500659-4395f89f-64cd-4997-9536-138f0474b500.png)
 
 ## Installation 
 The following dependencies will be needed in order for this application to work:
