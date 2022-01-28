@@ -1,9 +1,9 @@
 const Employee = require("../lib/Employee");
 
-// getName() - works
-// getId() - works 
-// getEmail() - works
-// getRole() - works
+// getName() - passed
+// getId() - passed 
+// getEmail() - passed
+// getRole() - passed
 
 describe('Employee', () => {
     it('getName returns the name of the current employee', () => {

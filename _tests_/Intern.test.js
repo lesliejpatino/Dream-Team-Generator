@@ -6,14 +6,14 @@ const Intern = require("../lib/Intern");
 describe('Intern', () => {
     it('getSchool returns the interns school name', () => {
 
-        let employee = new Intern("Leslie", "21", "leslie@coder.com", "UCB");
+        let employee = new Intern("Robbie", "37", "robbie@coder.com", "UCB");
         let employeeName = employee.getSchool();
 
         expect(employeeName).toBe("UCB");
     }) 
     it('getRole returns the role of the current employee', () => {
 
-        let employee = new Intern("Leslie", "21", "leslie@coder.com", "UCB");
+        let employee = new Intern("Robbie", "37", "robbie@coder.com", "UCB");
         let employeeName = employee.getRole();
 
         expect(employeeName).toBe("Intern");

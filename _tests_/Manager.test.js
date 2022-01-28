@@ -1,9 +1,12 @@
 const Manager = require("../lib/Manager");
 
-test("Testing if office number can be created", () => {
-    const testOfficeNumber = 21;
-    const employeeInstance = new Manager("", "", "", testOfficeNumber);
-    expect(employeeInstance.officeNumber).toBe(testOfficeNumber);
-});
+// getRole - 
+describe('Manager', () => {
+    it('getRole returns the role of the current employee', () => {
 
-// test method
+        let employee = new Manager("Isabella", "28", "izzy@coder.com");
+        let employeeName = employee.getRole();
+
+        expect(employeeName).toBe("Manager");
+    }) 
+});
