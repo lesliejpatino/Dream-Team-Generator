@@ -1,4 +1,4 @@
-# Team-Profile-Generator
+# Dream-Team-Generator
 
 
 ## Table of Contents
