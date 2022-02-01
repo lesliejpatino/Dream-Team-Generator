@@ -1,4 +1,4 @@
-# Dream-Team-Generator
+# Dream Team Generator
 
 
 ## Table of Contents
