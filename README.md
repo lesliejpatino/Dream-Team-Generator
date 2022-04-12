@@ -11,12 +11,12 @@
 
 
 ## Description 
-* The Team Profile Generator is a command-line application. When the application is [run](#usage) the user selects a member on the engineering team from a list and is then asked various questions that pertain to that employee. The questions will differ slightly depending on the type of employee that is selected.
+* The Dream Team Generator is a command-line application. When the application is [run](#usage) the user selects a member on the engineering team from a list and is then asked various questions that pertain to that employee. The questions will differ slightly depending on the type of employee that is selected.
 At the end of each prompt, the user will be given the option to add information for another team member if needed. Once the process is complete, an HTML file will be created to display each team members information on cards. Details about the [installation](#installation) required are listed below. 
 
 
 ## Link
-* Link to the [Team Profile Generator Repo](https://github.com/lesliejpatino/team-profile-generator)
+* Link to the [Dream Team Generator Repo](https://github.com/lesliejpatino/team-profile-generator)
 <br />
 
 ![html](https://user-images.githubusercontent.com/93683598/151500659-4395f89f-64cd-4997-9536-138f0474b500.png)
