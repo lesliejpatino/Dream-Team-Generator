@@ -11,9 +11,8 @@
 
 
 ## Description 
-* The Team Profile Generator is a command-line application. Details about the [installation](#installation) required are listed below. 
-When the application is [run](#usage) the user selects a member from the engineering team from a list and is then asked various questions that pertain to that employee. The questions will differ slightly depending on the type of employee that is selected.
-At the end of each prompt, the user will be given the option to add information on another team member if needed. Once the process is complete, an HTML file will be created to display each team members information on cards.
+* The Team Profile Generator is a command-line application. When the application is [run](#usage) the user selects a member on the engineering team from a list and is then asked various questions that pertain to that employee. The questions will differ slightly depending on the type of employee that is selected.
+At the end of each prompt, the user will be given the option to add information for another team member if needed. Once the process is complete, an HTML file will be created to display each team members information on cards. Details about the [installation](#installation) required are listed below. 
 
 
 ## Link
@@ -25,8 +24,8 @@ At the end of each prompt, the user will be given the option to add information 
 ## Installation 
 The following dependencies will be needed in order for this application to work:
 * [Node.js](https://nodejs.org/en/)
-* [Node module - Inquirer](https://www.npmjs.com/package/inquirer)
-* [Node module - FS(file system) ](https://nodejs.org/api/fs.html)
+* [Inquirer](https://www.npmjs.com/package/inquirer)
+* [FS(file system) ](https://nodejs.org/api/fs.html)
 * [Testing Framework - Jest](https://jestjs.io/)
 
 
